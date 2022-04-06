@@ -10,7 +10,6 @@ const gulpif = require('gulp-if');
 // SASS -> CSS
 const sass = require('gulp-sass')(require('sass'));
 sass.compiler = require('sass');
-const Fiber = require('fibers');
 const postcss = require('gulp-postcss');
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
@@ -59,7 +58,6 @@ const css = () => {
         // Compile SASS to CSS
         .pipe(sass({
             includePaths: ['./node_modules'],
-            fiber: Fiber
         }).on('error', sass.logError))
         // Add suffix
         .pipe(rename({ basename: 'main', suffix: '.min' }))
@@ -81,7 +79,6 @@ const cssInspector = () => {
         // Compile SASS to CSS
         .pipe(sass({
             includePaths: ['./node_modules'],
-            fiber: Fiber
         }).on('error', sass.logError))
         // Add suffix
         .pipe(rename({ basename: 'inspector-stylesheet', suffix: '', extname: ''}))

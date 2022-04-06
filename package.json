@@ -23,7 +23,6 @@
     "browser-sync": "^2.26.12",
     "cssnano": "^5.0.2",
     "faker": "^5.1.0",
-    "fibers": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
