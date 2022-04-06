@@ -1,8 +1,7 @@
 # Startercode EDE Shop
 * SASS Code für den Shop
 
-Use Node < V. 16 
-Otherwise you will get stuck. Version 14 or 15 should work fine at the moment.
+Use latest node version (17.01)
 
 Open Terminal and type 'nmp init'
 then type 'nmp i'
