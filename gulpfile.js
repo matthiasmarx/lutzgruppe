@@ -86,8 +86,8 @@ const cssInspector = () => {
         .pipe(postcss([autoprefixer(), cssnano()]))
         // Write sourcemap
         .pipe(gulpif(!isProduction(), sourcemaps.write('')))
-        // Write everything to destination folder
-        .pipe(gulp.dest(`${dest}/css/inspector%3a/www.papenbroock24.de/`));
+        // Write everything to destination folder - CHANGE HERE THE DOMAIN
+        .pipe(gulp.dest(`${dest}/css/inspector:/www.ede-shop.de/`));
 };
 
 
