@@ -1,0 +1,37 @@
+#template_header
+    .template_header_item
+        > a
+            background: transparent
+            border: 0
+            display: flex
+            align-items: center
+            >i
+                width: 28px
+                height: 28px
+                display: block
+                margin-right: 5px
+                &:before
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-position: center
+                    display: block
+                    height: 100%
+                    width: 100%
+            .template_cart_desc, .template_account_desc, .template_account_desc span
+                color: $white
+                font-family: $heading-font
+        
+        &.template_account
+            > a
+                .mdi-account:before
+                    background-image: url(https://www.shop.lutzgruppe.de/benutzerdaten/400492/shop/layout/icons/user-icon.png)
+                    content: ""
+        &.template_cart
+            > a
+                .mdi-cart:before
+                    background-image: url(https://www.shop.lutzgruppe.de/benutzerdaten/400492/shop/layout/icons/cart-icon.png)
+                    content: ""
+
+@media screen and ( max-width:  400px) 
+    html #template_header .template_header_item>a
+        padding: 2px

@@ -1,0 +1,107 @@
+.startseite-wrapper
+    .product-categories
+        padding: $sectionPadding 
+    .category-listing
+        display: flex
+        gap: 10px
+        flex-wrap: wrap
+        *
+            box-sizing: border-box
+
+        .category
+            width: calc(20% - 10px)
+            background: $white
+            display: block
+            transition: ease all 400ms
+            color: $black
+            position: relative
+            text-decoration: none
+            > a
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                z-index: 9
+            > .category-image
+                width: 100%
+                overflow: hidden
+                padding: 10px
+                > img 
+                    width: 100%
+                    height: auto
+                    transition: ease all 400ms
+            .category-text
+                font-family: $heading-font
+                text-align: left
+                width: 100%
+                padding: 10px calc(10px + 1.2em) 10px 10px
+                border-top: 1px solid $grey
+                position: relative
+                z-index: 5
+                transition: ease all 300ms
+                overflow: hidden
+                hyphens: auto
+                
+                &::after, &::before
+                    content:""
+                    position: absolute
+                    width: 1.2em
+                    height: 1.2em
+                    right: 10px
+                    top: 50%
+                    background-repeat: no-repeat
+                    background-size: 40%
+                    background-position: center center
+                    transform: translate(0,-50%)
+                    z-index: -1
+                &::before
+                    background: $blue
+                    transition: ease all 400ms
+                &::after
+                    transition: ease all 500ms 200ms
+                    background-image: url(#{$path}/icons/arrow-icon.png)
+            &:hover
+                box-shadow: 0 15px 25px rgba(0,0,0,.2)
+                .category-image > img
+                    transform: scale(1.2)
+                .category-text
+                    //background: $blue
+                    color: $white
+                    &::before
+                        right: 0
+                        height: 100%
+                        width: 100%
+                    &::after
+                        //transform: translate(50px, -50%)
+
+
+@media screen and (max-width: 992px)
+    .startseite-wrapper .category-listing 
+        justify-content: center
+        .category
+            width: calc(25% - 10px)
+    
+@media screen and (max-width: 865px)
+    .startseite-wrapper .category-listing 
+        .category
+            width: calc(33.33% - 10px)
+        
+@media screen and (max-width: 610px)
+    .startseite-wrapper .category-listing 
+        .category
+            width: calc(50% - 10px)
+
+@media screen and (max-width: 410px)
+    .startseite-wrapper .category-listing 
+        .category
+            .category-text
+                font-size: 15px
+                &::after, &::before
+                    width: 1em
+                    height: 1em
+
+@media screen and (max-width: 330px)
+    .startseite-wrapper .category-listing 
+        .category
+            width: 100%

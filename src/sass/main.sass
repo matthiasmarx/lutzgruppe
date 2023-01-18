@@ -1,4 +1,8 @@
 @import './var'
+@import './fonts'
+@import './utils/buttons'
+@import './frontpage/main'
+@import './header/main'
 // Add other Stylesheets like this: ,'./buttons', './slider'
 
 // Run "npm run dev" to start
@@ -6,5 +10,29 @@
 // Ready to go ;)
 
 *
-    font-family: $regular
+    font-family: $text-font
     
+html.template_html
+    overflow-x: hidden
+
+// DEV !
+body 
+    padding: 0
+    margin: 0
+    overflow-x: hidden
+    font-family: $text-font
+
+.user_content
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 20px
+
+h1, h2, h3, h4, h5, h6
+    font-family: $heading-font
+    color: $dark-grey
+
+b, strong
+    font-weight: 700
+
+h3
+    font-size: 18px

@@ -1,0 +1,22 @@
+$border-radius: 5px
+
+.template_header_item.template_search
+    width: 60%
+
+#template_search_form
+    #template_search_text
+        border-radius: $border-radius
+        border: 0
+        font-family: $text-font
+
+    #template_search_submit
+        border-radius: 0 $border-radius $border-radius 0
+        border: 0
+
+
+
+
+@media screen and ( max-width:  480px) 
+    .popup_content_search, .popup_content_account, .popup_content_cart, .popup_content_menu
+        left: 50%
+        transform: translate(-50%, 0)

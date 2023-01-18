@@ -1,0 +1,18 @@
+.startseite-wrapper
+    .aktuelle-aktionen
+        padding: $sectionPadding 
+        display: flex
+        flex-wrap: wrap
+        gap: 14px
+        .aktion
+            width: calc(50% - 7px)
+            > img 
+                max-width: 100%
+                width: 100%
+                height: auto
+
+@media screen and (max-width: 768px)
+    .startseite-wrapper
+        .aktuelle-aktionen
+            .aktion
+                width: 100%

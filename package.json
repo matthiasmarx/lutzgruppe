@@ -1,7 +1,7 @@
 {
-  "name": "papenbroock-shop",
+  "name": "lutzgruppe-ede-shop",
   "version": "0.0.0",
-  "description": "Compiled CSS für den Papenbroock Shop",
+  "description": "Compiled CSS für den Lutzgruppe Shop",
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:matthiasmarx/papenbroock"
+    "url": "git+https://github.com/matthiasmarx/lutzgruppe.git"
   },
   "author": "Matthias Marx | Agentur 54",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matthiasmarx/papenbroock/issues"
+    "url": "https://github.com/matthiasmarx/lutzgruppe/issues"
   },
-  "homepage": "https://github.com/matthiasmarx/papenbroock#readme",
+  "homepage": "https://github.com/matthiasmarx/lutzgruppe#readme",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "babel-runtime": "^6.26.0",

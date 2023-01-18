@@ -87,7 +87,7 @@ const cssInspector = () => {
         // Write sourcemap
         .pipe(gulpif(!isProduction(), sourcemaps.write('')))
         // Write everything to destination folder - CHANGE HERE THE DOMAIN
-        .pipe(gulp.dest(`${dest}/css/inspector:/www.ede-shop.de/`));
+        .pipe(gulp.dest(`${dest}/css/inspector:/www.shop.lutzgruppe.de/`));
 };
 
 

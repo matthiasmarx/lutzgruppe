@@ -1,0 +1,63 @@
+@import './search'
+@import './buttons'
+@import './popUps'
+@import './navigation'
+
+#template_header
+    #template_header_list
+        padding: 10px 0
+
+
+#template_logo_stickynavi
+    box-sizing: border-box
+    padding-right: 30px
+    max-height: initial
+    max-width: 200px
+
+
+@media screen and ( max-width:  960px)   
+    #template_header_list
+        display: flex
+        gap: 10px
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+
+    #template_header .template_header_item:not(.template_search)
+        border: 1px solid rgba(255,255,255,.4)
+
+    #template_header .template_header_item
+        position: initial
+        margin: 0 
+        border-radius: 3px
+        > a
+            display: flex
+            align-items: center
+            justify-content: center
+            height: auto
+            width: auto
+            padding: 5px
+            aspect-ratio: 1/1
+            >i
+                color: white
+                display: block
+                top: 0
+                width: 20px
+                margin: 0
+
+
+
+
+.sticky_navi.sticky_navi_fixed#sticky_menu
+    .top_navi
+        display: flex
+        align-items: center 
+        padding: 10px 15px
+        .sticky_logo_mini_position
+            > img 
+                margin: 0 
+                display: block
+    #template_header_list
+        margin-bottom: 0
+        padding: 0
+        justify-content: flex-end

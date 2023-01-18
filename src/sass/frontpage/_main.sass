@@ -1,0 +1,32 @@
+@import './slider'
+@import './categoryListing'
+@import './aktionen'
+@import './marken'
+@import './bestseller'
+@import './kataloge'
+@import './empfehlungen'
+@import './loesungenServices'
+@import './tabs'
+
+
+.grey-bg
+    background: $grey
+    position: relative
+    z-index: 2
+    &::before
+        content: ""
+        width: 100vw
+        height: 100%
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translate(-50%, 0)
+        background: $grey
+        z-index: -1
+
+.heading-with-border
+    border-bottom: 2px solid $grey
+    width: 100%
+    margin-bottom: 1em
+    h2 
+        margin-bottom: .25em

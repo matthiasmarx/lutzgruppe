@@ -1,0 +1,40 @@
+.startseite-wrapper
+    .kataloge
+        padding: $sectionPadding
+        *
+            box-sizing: border-box
+        .kataloge-list-wrap
+            display: flex
+            flex-wrap: wrap
+            gap: 15px
+
+            .katalog 
+                display: block
+                width: calc(16.66% - 15px)
+                padding-right: 15px
+                text-decoration: none
+                color: $dark-grey
+                position: relative
+                > a
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    top: 0
+                    left: 0
+                    z-index: 9
+                img 
+                    max-width: 100%
+                    width: 100%
+                    transition: ease all 300ms
+                span
+                    display: block
+                .prime 
+                    color: $blue
+                
+                &:hover 
+                    img 
+                        box-shadow: 0 5px 10px rgba(00,0,0,.1)
+
+@media screen and (max-width: 750px)
+    .startseite-wrapper .kataloge .kataloge-list-wrap .katalog
+        width: calc(33.33% - 15px)

@@ -1,0 +1,42 @@
+.startseite-wrapper
+    .loesungen-services
+        padding: $sectionPadding
+
+        .loesungen-services-post-wrapper
+            gap: 15px
+            display: flex
+            flex-wrap: wrap
+
+            *
+                box-sizing: border-box
+
+        .blog-post 
+            width: calc(33.33% - 10px)
+            margin-bottom: 20px
+            img
+                max-width: 100%
+                width: 100%
+                height: auto
+        .blog-post, .blog-post-content
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            h3
+                color: $black
+                margin-bottom: 0
+            p
+                margin-top: .5em
+                color: $dark-grey
+
+
+@media screen and (max-width: 768px)
+    .startseite-wrapper
+        .loesungen-services
+            .blog-post 
+                width: calc(50% - 10px)
+
+@media screen and (max-width: 550px)
+    .startseite-wrapper
+        .loesungen-services
+            .blog-post 
+                width: 100%

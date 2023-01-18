@@ -1,0 +1,87 @@
+#template_header #template_main_nav
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    padding: 10px 0
+    > li:not(:last-child)
+        border-right: 1px solid rgba(255,255,255,.5)
+    > li
+        margin-bottom: 10px
+        &:hover 
+            > a
+                border-bottom: 0
+                background: $white
+                color: $blue
+        > a
+            font-family: $text-font
+            font-weight: 300
+            padding-bottom: 0
+            padding: 5px 10px
+            border-radius: 3px
+            margin-bottom: 0
+            margin-right: 15px
+            margin-left: 15px
+            border-bottom: 0
+            letter-spacing: .5px
+            font-size: 15px
+            transition: ease all 400ms
+            &.active
+                border-bottom: 0
+                
+
+#template_header #template_main_nav 
+    .popup_div
+        padding-left: 10px
+
+
+    .template_wgprev_heading
+        font-size: 16px 
+        font-family: $heading-font
+        text-transform: none
+        color: $black
+        border-radius: 3px
+        padding: 7px 15px
+        margin-bottom: 3px
+        box-sizing: border-box
+        margin-right: 10px
+        > i.mdi
+            display: none
+        &:hover
+            background: $blue
+            color: white
+
+#template_header #template_main_nav span.template_nav_span
+    border: 0 !important
+
+
+
+
+@media screen and ( min-width: 960px  )
+    #template_header #template_main_nav 
+        .popup_div
+            &::after
+                content:""
+                position: absolute
+                width: calc(28% - 30px)
+                height: 100%
+                background: #f4f5f6
+                top: 0
+                left: 0
+                z-index: -1
+                display: block
+                border-radius: 5px 0 0 5px
+        
+
+@media screen and ( max-width: 960px  )
+    html #template_header #template_main_nav
+        display: flex
+        align-items: center
+        justify-content: center
+        box-sizing: border-box
+        padding-top: 0
+        margin-left: 0
+        >li 
+            border: 0 !important
+
+

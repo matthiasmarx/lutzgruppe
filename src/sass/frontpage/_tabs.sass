@@ -1,0 +1,52 @@
+.tab-navigation
+    width: 100%
+    background: $white
+    border-bottom: $grey 3px solid 
+    margin-bottom: 40px
+
+    button 
+        border: 0  
+        font-family: $heading-font
+        background: transparent
+        color: $black 
+        border-bottom: 3px solid $grey
+        margin-bottom: -3px
+        padding: 1em 2em
+        cursor: pointer 
+        transition: ease all 400ms
+        &.active 
+            border-bottom-color: $blue
+            color: $blue
+        &:hover:not(.active) 
+            color: $blue
+            border-bottom-color: $blue
+
+@media (min-width: 992px)
+    .tab-contents
+        .tab
+            // display: flex 
+            // align-items: flex-start
+            // flex-wrap: wrap 
+        .tab > p
+            font-size: 14px
+            line-height: 1.6
+            max-width: 890px
+        > .tab > div 
+            width: 60%
+        > .tab img
+            padding: 0 2em 
+            max-width: 40%  
+
+
+.tab-contents
+    padding-bottom: 50px
+    > .tab img
+        height: auto
+        width: auto
+        display: block
+        
+
+    ul li 
+        list-style: "✓"
+    .tab:not(.active)
+        display: none
