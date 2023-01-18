@@ -1,5 +1,5 @@
-# Startercode EDE Shop
-* SASS Code für den Shop
+# Lutzgruppe EDE Shop
+* SASS Code für den Shop + HTML für Startseite
 
 Use latest node version (17.01)
 
