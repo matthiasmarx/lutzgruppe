@@ -1,0 +1,81 @@
+.cat_outer_frame
+    background: $white
+    display: block
+    transition: ease all 400ms
+    color: $black
+    position: relative
+    z-index: 1
+    text-decoration: none
+    overflow: hidden
+    padding: 0
+    border: 0
+    box-shadow: 0 5px 10px rgba(0,0,0,.1)
+
+    &:hover 
+        border: 0 
+
+
+    .cat_image_frame 
+        height: 100%
+        position: relative
+
+    .cat_title_frame
+        position: absolute
+        z-index: 1
+        top: auto
+        bottom: 0
+        left: 0
+        width: 100%
+        height: auto
+        background: $white
+        opacity: 1
+        font-family: $heading-font
+        padding: 15px calc(10px + 1.2em) 15px 10px
+        border-top: 1px solid $grey
+
+
+
+
+        > table > tbody > tr > td 
+            text-align: left 
+            h3 
+                color: $black
+                font-weight: 500
+
+
+        &::after, &::before
+                content: ""
+                position: absolute
+                width: 1.2em
+                height: 1.2em
+                right: 10px
+                top: 50%
+                background-repeat: no-repeat
+                background-size: 40%
+                background-position: center center
+                transform: translate(0,-50%)
+                z-index: -1
+        &::before
+            background: $blue
+            transition: ease all 400ms
+        &::after
+            transition: ease all 500ms 200ms
+            background-image: url(#{$path}/icons/arrow-icon.png)
+
+    &:hover
+        box-shadow: 0 15px 25px rgba(0,0,0,.2)
+
+        .cat_title_frame
+            box-shadow: 0 15px 25px rgba(0,0,0,.2)
+            > table > tbody > tr > td h3 
+                color: $white
+
+            &::before
+                right: 0
+                height: 100%
+                width: 100%
+
+
+
+
+            
