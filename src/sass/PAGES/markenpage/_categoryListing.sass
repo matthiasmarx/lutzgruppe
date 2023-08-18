@@ -1,0 +1,31 @@
+// Main Styles are under UI/categoryListing.sass
+// These styles just overwrite them
+
+html .user_content
+    .product-categories
+    .category-listing
+        gap: 10px
+        &-marken
+            justify-content: space-between
+            .category
+                width: calc(33% - 10px / 3 * 2)
+
+// @media screen and (max-width: 992px)
+//     html .user_content .category-listing-marken 
+//         justify-content: center
+//         .category
+//             width: calc(25% - 10px)
+    
+// @media screen and (max-width: 865px)
+//     html .user_content .category-listing-marken 
+//         .category
+//             width: calc(33.33% - 10px)
+        
+@media screen and (max-width: 865px)
+    html .user_content .category-listing-marken 
+        .category
+            width: calc(50% - 10px)
+@media screen and (max-width:390px)
+    html .user_content .category-listing-marken 
+        .category
+            width: 100%

@@ -1,0 +1,28 @@
+.user_content
+    .content-text-image-section
+        display: flex
+        flex-wrap: wrap
+        gap: 25px
+        justify-content: space-between
+        align-items: center
+        padding: 75px 0
+        &__image-holder, &__text-holder
+            width: calc(50% - 25px / 2)
+            box-sizing: border-box
+        &__image-holder
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            img 
+                max-width: 100%
+
+        &__text-holder
+            .heading 
+                font-size: 1.4rem
+
+@media screen and (max-width: 865px)
+    .user_content
+        .content-text-image-section
+            &__image-holder, &__text-holder
+                width: 100%
